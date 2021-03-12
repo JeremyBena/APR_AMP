@@ -132,7 +132,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			
 			//For the example block (often practice)
 			exampleBlock_fixationDuration : -1, 
-			exampleBlock_primeDuration : 75, 
+			exampleBlock_primeDuration : 750, 
 			exampleBlock_postPrimeDuration : 0, 
 			exampleBlock_targetDuration : 100, 
 			
