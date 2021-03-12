@@ -52,7 +52,7 @@ define(['pipAPI', 'https://jeremybena.github.io/APR_AMP/AMP_original/AMP_paramet
 		},
 
 		base_url : {//Where are your images at?
-			image : 'https://baranan.github.io/minno-tasks/images/ampImages'
+			image : 'https://jeremybena.github.io/APR_AMP/images'
 		}
 	});
 });
