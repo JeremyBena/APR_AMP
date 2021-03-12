@@ -6,16 +6,16 @@ define(['pipAPI', 'https://jeremybena.github.io/APR_AMP/AMP_original/AMP_paramet
 	return ampExtension({
 		primeCats :  [
 			{
-				nameForFeedback : 'Black people',  //Will be used in the user feedback 
-				nameForLogging : 'Black people', //Will be used in the logging
+				nameForFeedback : 'Francis West',  //Will be used in the user feedback 
+				nameForLogging : 'francis_target', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
 				    {image : 'Francis.jpg'}]
 
 			}, 
 			{
-				nameForFeedback : 'White people',  //Will be used in the user feedback 
-				nameForLogging : 'White people', //Will be used in the logging
+				nameForFeedback : 'Control',  //Will be used in the user feedback 
+				nameForLogging : 'control', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
 				    {image : 'Control1.jpg'}, 
@@ -28,7 +28,7 @@ define(['pipAPI', 'https://jeremybena.github.io/APR_AMP/AMP_original/AMP_paramet
 
 		examplePrimeStimulus : 
 		{
-			nameForLogging : 'examplePrime', //Will be used in the logging
+			nameForLogging : 'training', //Will be used in the logging
 			//An array of all media objects for this category.
 			mediaArray : [{image : 'Control1.jpg'}, {image : 'Control2.jpg'}, {image : 'Control3.jpg'}, {image : 'Control4.jpg'}, {image : 'Control5.jpg'}]
 		},
