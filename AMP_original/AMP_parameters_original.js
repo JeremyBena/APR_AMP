@@ -22,7 +22,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//Set the canvas of the task
 			canvas : {
 				maxWidth: 850,
-				proportions : 0.8,
+				proportions : 1,
 				background: '#000000',
 				borderWidth: 4,
 				canvasBackground: '#000000',
