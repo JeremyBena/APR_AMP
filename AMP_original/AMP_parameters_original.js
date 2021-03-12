@@ -22,9 +22,9 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//Set the canvas of the task
 			canvas : {
 				maxWidth: 850,
-				proportions : 0.7,
+				proportions : 0.8,
 				background: '#ffffff',
-				borderWidth: 5,
+				borderWidth: 4,
 				canvasBackground: '#ffffff',
 				borderColor: 'lightblue'
 			}, 
@@ -126,16 +126,16 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				image : 'https://jeremybena.github.io/APR_AMP/images'
 			}, 
 
-			trialsInBlock : [40, 40, 40], //Number of trials in each block 
+			trialsInBlock : [20, 20, 20], //Number of trials in each block 
 			trialsInExample : 3, //Change to 0 if you don't want an example block
 			
 			//Duration parameters.
 			fixationDuration : -1, //It means that by default we do not use fixation.
-			primeDuration : 100, 
-			postPrimeDuration : 100, //Duration of blank screen between prime and target.
+			primeDuration : 75, 
+			postPrimeDuration : 0, //Duration of blank screen between prime and target.
 			targetDuration : 100, //Duration of target presentation.
 			showRatingDuration : 300, //In the 7-responses option, for how long to show the selected rating.
-			ITI : 250, //Duration between trials.
+			ITI : 500, //Duration between trials.
 			
 			responses : 2, //Change to 7 for a 1-7 rating
 	        // When using 7 response options, 
@@ -144,9 +144,9 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			
 			//For the example block (often practice)
 			exampleBlock_fixationDuration : -1, 
-			exampleBlock_primeDuration : 100, 
-			exampleBlock_postPrimeDuration : 100, 
-			exampleBlock_targetDuration : 300, 
+			exampleBlock_primeDuration : 75, 
+			exampleBlock_postPrimeDuration : 0, 
+			exampleBlock_targetDuration : 100, 
 			
 			//Instructions text for the 2-responses version.
 			exampleBlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="000000"><br/>' + 
