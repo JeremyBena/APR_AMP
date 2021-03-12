@@ -22,7 +22,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//Set the canvas of the task
 			canvas : {
 				maxWidth: 850,
-				proportions : 1,
+				proportions : .8,
 				background: '#000000',
 				borderWidth: 4,
 				canvasBackground: '#000000',
@@ -132,16 +132,16 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			
 			//For the example block (often practice)
 			exampleBlock_fixationDuration : -1, 
-			exampleBlock_primeDuration : 750, 
+			exampleBlock_primeDuration : 75, 
 			exampleBlock_postPrimeDuration : 0, 
 			exampleBlock_targetDuration : 100, 
 			
 			//Instructions text for the 2-responses version.
 			exampleBlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Press the key <B>rightKey</B> if the targetCat is more rightAttribute than average. ' + 
+			'Press the key <B>rightKey</B> if the Person is more rightAttribute than average. ' + 
 			'Hit the <b>leftKey</b> key if it is more leftAttribute than average.<br/><br/>' + 
 			'The items appear and disappear quickly.  ' + 
-			'Remember to ignore the item that appears before the targetCat and evaluate only the targetCat.<br/><br/></p>'  + 
+			'Remember to ignore the item that appears after the Person and evaluate only the Person.<br/><br/></p>'  + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -149,9 +149,9 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			firstBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			"See how fast it is? Don't worry if you miss some. " + 
 			'Go with your gut feelings.<br/><br/>' + 
-			'Concentrate on each targetCat and rate it as more rightAttribute than the average targetCat with the <b>rightKey</b> key, ' + 
+			'Concentrate on each Person and rate it as more rightAttribute than the average Person with the <b>rightKey</b> key, ' + 
 			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
+			'Evaluate each Person and not the item that appears after it. ' + 
 			'Those items are sometimes distracting.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
@@ -160,9 +160,9 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Continue to another round of this task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
-			'Concentrate on the targetCat and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
+			'Concentrate on the Person and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
 			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
+			'Evaluate each Person and not the item that appears after it. ' + 
 			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
@@ -171,9 +171,9 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			lastBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Ready for the FINAL round? ' + 
 			'The rules are exactly the same:<br/><br/>' + 
-			'Concentrate on the targetCat and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
+			'Concentrate on the Person and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
 			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
-			'Evaluate each targetCat and not the item that appears before it. ' + 
+			'Evaluate each Person and not the item that appears after it. ' + 
 			'Those items are sometimes distracting. Go with your gut feelings.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
