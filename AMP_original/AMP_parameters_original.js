@@ -23,13 +23,13 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			canvas : {
 				maxWidth: 850,
 				proportions : 0.8,
-				background: '#ffffff',
+				background: '#000000',
 				borderWidth: 4,
-				canvasBackground: '#ffffff',
+				canvasBackground: '#000000',
 				borderColor: 'lightblue'
 			}, 
 			//The CSS for all the prime stimuli.
-			primeStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
+			primeStimulusCSS : {color:'#ffffff','font-size':'2.3em'},
 			//The prime categories.
 			primeCats :  [
 				{
@@ -51,7 +51,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				mediaArray : [{word : 'Table'}, {word : 'Chair'}]
 			},
 			//The CSS for all the target stimuli (usually irrelevant because the targets are Chinese pictographs.
-			targetStimulusCSS : {color:'#0000FF','font-size':'2.3em'},
+			targetStimulusCSS : {color:'#ffffff','font-size':'2.3em'},
 			//The prime categories.
 			targetCats :  [
 				{
@@ -117,7 +117,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
-			fontColor : '#000000', 
+			fontColor : '#ffffff', 
 
 			rightKey : 'i', 
 			leftKey : 'e', 
@@ -525,7 +525,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			layout: [
     		    {
     		        location:{top:3},
-    		        media:{html:'To respond: click on your response, or use the keys 1-7'}, css:{color:'#000000','font-size':'1em', 'z-index':'100'}
+    		        media:{html:'To respond: click on your response, or use the keys 1-7'}, css:{color:'#ffffff','font-size':'1em', 'z-index':'100'}
     		    }
     		],
 			input: [
