@@ -10,7 +10,7 @@ define(['pipAPI', 'https://jeremybena.github.io/APR_AMP/AMP_original/AMP_paramet
 				nameForLogging : 'Black people', //Will be used in the logging
 				//An array of all media objects for this category.
 				mediaArray : [
-				    {image : 'b01.jpg'}, 
+				    {image : 'Francis.jpg'}, 
 					{image : 'b02.jpg'}, 
 					{image : 'b03.jpg'}, 
 					{image : 'b04.jpg'}, 
@@ -48,7 +48,7 @@ define(['pipAPI', 'https://jeremybena.github.io/APR_AMP/AMP_original/AMP_paramet
 		{
 			nameForLogging : 'examplePrime', //Will be used in the logging
 			//An array of all media objects for this category.
-			mediaArray : [{image : 'ampchair.jpg'}, {image : 'amplamp.jpg'}, {image : 'ampumbrella.jpg'}]
+			mediaArray : [{image : 'Control1.jpg'}, {image : 'Control2.jpg'}, {image : 'Control3.jpg'}]
 		},
 
 		base_url : {//Where are your images at?
