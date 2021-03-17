@@ -158,7 +158,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Round 2 of nBlocks]</p></div>',
 			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Continue to another round of this task. ' + 
+			'Continue to start the task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
 			'Concentrate on the Person and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
 			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
