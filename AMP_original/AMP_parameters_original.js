@@ -114,7 +114,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				image : 'https://jeremybena.github.io/APR_AMP/images'
 			}, 
 
-			trialsInBlock : [20, 20, 20], //Number of trials in each block 
+			trialsInBlock : [60], //Number of trials in each block 
 			trialsInExample : 10, //Change to 0 if you don't want an example block
 			
 			//Duration parameters.
@@ -158,7 +158,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Round 2 of nBlocks]</p></div>',
 			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Continue to another round of this task. ' + 
+			'Continue to start the task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
 			'Concentrate on the targetCat and rate it as more rightAttribute than average with the <b>rightKey</b> key, ' + 
 			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
@@ -223,7 +223,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
 			endText: '<div><p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
-			'You have completed the task<br/><br/>Press "space" to continue to next task.</p></div>', 
+			'You have completed the task<br/><br/>Press "space" to resume the study.</p></div>', 
 			
 			//The feedback messages:
 			//The task will save a "feedback" variable that details the number of each type of responses after primes of each category. 
