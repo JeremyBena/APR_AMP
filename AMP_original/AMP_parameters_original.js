@@ -147,7 +147,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Round 1 of nBlocks]</p></div>',
 			egeg: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Press the key <B>rightKey</B> if the targetCat is more rightAttribute than average. ' + 
+			'TEST the key <B>rightKey</B> if the targetCat is more rightAttribute than average. ' + 
 			'Hit the <b>leftKey</b> key if it is more leftAttribute than average.<br/><br/>' + 
 			'The items appear and disappear quickly.  ' + 
 			'Remember to ignore the item that appears before the targetCat and evaluate only the targetCat.<br/><br/></p>'  + 
@@ -1058,14 +1058,14 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		var blockNum = 1;
 		if (piCurrent.trialsInExample > 0)
 		{
-		    var exampleBlockInst = piCurrent.responses==2 ? piCurrent.exampleBlockInst : piCurrent.exampleBlockInst7;
+		    var egeg = piCurrent.responses==2 ? piCurrent.egeg : piCurrent.exampleBlockInst7;
 			//Instructions trial
 			trialSequence.push(
 				{
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst, blockNum:1})}, nolog:true}, 
+						{media:{html:fromTemplate({template:egeg, blockNum:1})}, nolog:true}, 
 						{inherit:'dummyForLog'}
 					]
 				}
