@@ -137,28 +137,20 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			exampleBlock_targetDuration : 100, 
 			
 			//Instructions text for the 2-responses version.
-			example1BlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Now you will complete the first Visual Processing Task.' + 
+			exampleBlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			'Now you will complete the first Visual Processing Task.<br/><br/>' + 
 			'You will see pairs of pictures flashed one after the other. The first picture shows a person, and the second shows a Chinese character. Your job is to judge the visual pleasantness of each Chinese character. <br/><br/>' + 
-			'Of course, there are no right or wrong answers. Just report your own personal feelings as to whether each Chinese character looks relatively pleasant or unpleasant.' + 
+			'Of course, there are no right or wrong answers. Just report your own personal feelings as to whether each Chinese character looks relatively pleasant or unpleasant.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Round 1 of nBlocks]</p></div>',
-			example2BlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			"Put your middle or index fingers on the E and I keys of your keyboard. " + 
-			'If a Chinese character looks more pleasant than average, press the E key on the left. If a Chinese character looks less pleasant than average, press the I key on the right.<br/><br/>' + 
-			'The items appear and disappear quickly.  ' + 
-			'It is important to note that the pictures of people can sometimes bias people’s judgments of the Chinese characters. <br/><br/></p>'  + 
-			'Because we are interested in how you can avoid being biased, please try your absolute best not to let the people bias your judgment of the Chinese characters! Give us an honest assessment of each Chinese character, regardless of the pictures that precede them.' +
+			'Put your middle or index fingers on the E and I keys of your keyboard.<br/><br/>' + 
+			'If a Chinese character looks less pleasant than average, press the I key on the right. <br/><br/>' +  
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
+			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Round 1 of nBlocks]</p></div>',
-			example3BlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'To get a feel for the task, we will begin with 10 practice trials. ' + 
-			"Again, your task is to judge whether the Chinese characters look more pleasant or less pleasant than average by pressing either the 'E' or 'I' key.<br/><br/>" + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
+			'It is important to note that the pictures of people can sometimes bias people’s judgments of the Chinese characters.<br/><br/>' + 
+			'Because we are interested in how you can avoid being biased, please try your absolute best not to let the people bias your judgment of the Chinese characters! Give us an honest assessment of each Chinese character, regardless of the pictures that precede them.<br/><br/>' + 
 			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Round 1 of nBlocks]</p></div>',
@@ -1062,9 +1054,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		var blockNum = 1;
 		if (piCurrent.trialsInExample > 0)
 		{
-		    var example1BlockInst = piCurrent.responses==2 ? piCurrent.example1BlockInst : piCurrent.exampleBlockInst7;
-			var example2BlockInst = piCurrent.responses==2 ? piCurrent.example2BlockInst : piCurrent.exampleBlockInst7;
-			var example3BlockInst = piCurrent.responses==2 ? piCurrent.example3BlockInst : piCurrent.exampleBlockInst7;
+		    var exampleBlockInst = piCurrent.responses==2 ? piCurrent.exampleBlockInst : piCurrent.exampleBlockInst7;
 			//Instructions trial
 			trialSequence.push(
 				{
