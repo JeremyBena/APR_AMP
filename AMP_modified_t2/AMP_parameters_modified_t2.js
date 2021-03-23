@@ -138,46 +138,21 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			
 			//Instructions text for the 2-responses version.
 			exampleBlockInst1: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Now you will complete the first Visual Processing Task.<br/><br/>' + 
-			'You will see pairs of pictures flashed one after the other.<br/><br/>' + 
+			'Now you will complete the second Visual Processing Task.<br/><br/>' + 
+			'As a reminder, you will see pairs of pictures flashed one after the other.<br/><br/>' + 
 			'The first picture shows a person, and the second shows a Chinese character.<br/><br/>' + 
 			'Your job is to judge whether each person is a pleasant individual or an unpleasant individual.<br/><br/>' +
 			'Of course, there are no right or wrong answers. Just report your intuition as to whether each person is a pleasant or unpleasant individual.<br/><br/>' +
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Instructions 1/3]</p></div>',
-			exampleBlockInst2: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Put your middle or index fingers on the E and I keys of your keyboard.<br/><br/>' + 
-			'If you think someone is a more pleasant individual than average, press the E key on the left.<br/><br/>' + 
-			'If you think someone is a less pleasant individual than average, press the I key on the right.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Instructions 2/3]</p></div>',
-			exampleBlockInst3: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'It is important to note that the Chinese characters can sometimes bias people’s judgments of the people.<br/><br/>' + 
-			'Because we are interested in how you can avoid being biased, please try your absolute best not to let the Chinese characters bias your judgment of the people!<br/><br/>' + 
-			'Give us an honest assessment of each person, regardless of the images that follow them.<br/><br/>' + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Instructions 3/3]</p></div>',
-			exampleBlockInst4: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'To get a feel for the task, we will begin with 10 practice trials.<br/><br/>' + 
+			'<color="ffffff">[Instructions]</p></div>',
+			firstBlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
+			'Begin the second Visual Processing Task when you are ready.<br/><br/>' + 
 			"Again, your task is to judge whether the people are more pleasant individuals or less pleasant individuals than average by pressing either the 'E' or 'I' key.<br/><br/>" + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Practice trials]</p></div>',
-			firstBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			"Practice is now complete and the first Visual Processing Task will now begin.<br/><br/>" + 
-			"As a reminder, if you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
-			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[First visual processing task]</p></div>',
+			'<color="ffffff">[Second visual processing task]</p></div>',
 			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Continue to start the task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
@@ -1071,11 +1046,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		if (piCurrent.trialsInExample > 0)
 		{
 		    var exampleBlockInst1 = piCurrent.responses==2 ? piCurrent.exampleBlockInst1 : piCurrent.exampleBlockInst7;
-		    var exampleBlockInst2 = piCurrent.responses==2 ? piCurrent.exampleBlockInst2 : piCurrent.exampleBlockInst7;
-		    var exampleBlockInst3 = piCurrent.responses==2 ? piCurrent.exampleBlockInst3 : piCurrent.exampleBlockInst7;
-		    var exampleBlockInst4 = piCurrent.responses==2 ? piCurrent.exampleBlockInst4 : piCurrent.exampleBlockInst7;
-
-			//Instructions trial 1/4
+		    
+			//Instructions trial 1/1
 			trialSequence.push(
 				{
 					inherit : 'inst', 
@@ -1086,56 +1058,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					]
 				}
 			);
-			//Instructions trial 2/4
-			trialSequence.push(
-				{
-					inherit : 'inst', 
-					data: {blockStart:true, block:blockNum}, 
-					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst2, blockNum:blockNum})}, nolog:true}, 
-						{inherit:'dummyForLog'}
-					]
-				}
-			);
 			
-			//Instructions trial 3/4
-			trialSequence.push(
-				{
-					inherit : 'inst', 
-					data: {blockStart:true, block:blockNum}, 
-					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst3, blockNum:blockNum})}, nolog:true}, 
-						{inherit:'dummyForLog'}
-					]
-				}
-			);
-			
-			//Instructions trial 4/4
-			trialSequence.push(
-				{
-					inherit : 'inst', 
-					data: {blockStart:true, block:blockNum}, 
-					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst4, blockNum:blockNum})}, nolog:true}, 
-						{inherit:'dummyForLog'}
-					]
-				}
-			);
-			//example trials
-			trialSequence.push(
-				{ 
-					mixer: 'repeat',// Repeat x times the trial.
-					times: piCurrent.trialsInExample,
-					data : [
-						{
-							inherit: {set:'exampleSort',type:'exRandom'}, 
-							data:{block:blockNum, condition:'example'}
-						}
-					]
-				}
-			);
-			blockNum++;
-		}
 		var iBlock, blockInst;
 		for (iBlock = 0; iBlock < piCurrent.trialsInBlock.length; iBlock++)
 		{
