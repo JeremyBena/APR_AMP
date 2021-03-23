@@ -138,7 +138,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			
 			//Instructions text for the 2-responses version.
 			exampleBlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Press the key <B>rightKey</B> if the Person is more rightAttribute than average. ' + 
+			'Now you will complete the first Visual Processing Task.' + 
 			'Hit the <b>leftKey</b> key if it is more leftAttribute than average.<br/><br/>' + 
 			'The items appear and disappear quickly.  ' + 
 			'Remember to ignore the item that appears after the Person and evaluate only the Person.<br/><br/></p>'  + 
