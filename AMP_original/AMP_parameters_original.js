@@ -147,7 +147,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Round 1 of nBlocks]</p></div>'+
 			'<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Press the key <B>rightKey</B> if the targetCat is more rightAttribute than average. ' + 
+			'TEST the key <B>rightKey</B> if the targetCat is more rightAttribute than average. ' + 
 			'Hit the <b>leftKey</b> key if it is more leftAttribute than average.<br/><br/>' + 
 			'The items appear and disappear quickly.  ' + 
 			'Remember to ignore the item that appears before the targetCat and evaluate only the targetCat.<br/><br/></p>'  + 
