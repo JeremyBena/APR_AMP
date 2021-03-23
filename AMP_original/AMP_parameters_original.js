@@ -1059,6 +1059,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		if (piCurrent.trialsInExample > 0)
 		{
 		    var egeg = piCurrent.responses==2 ? piCurrent.egeg : piCurrent.exampleBlockInst7;
+		    var exampleBlockInst = piCurrent.responses==2 ? piCurrent.exampleBlockInst : piCurrent.exampleBlockInst7;
+			
 			//Instructions trial
 			trialSequence.push(
 				{
@@ -1066,6 +1068,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
 						{media:{html:fromTemplate({template:egeg, blockNum:1})}, nolog:true}, 
+						{inherit:'dummyForLog'},
+						{media:{html:fromTemplate({template:exampleBlockInst, blockNum:2})}, nolog:true}, 
 						{inherit:'dummyForLog'}
 					]
 				}
@@ -1073,7 +1077,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//example trials
 			trialSequence.push(
 				{ 
-					mixer: 'repeat',// Repeat 3 times the trial.
+					mixer: 'repeat',// Repeat x times the trial.
 					times: piCurrent.trialsInExample,
 					data : [
 						{
