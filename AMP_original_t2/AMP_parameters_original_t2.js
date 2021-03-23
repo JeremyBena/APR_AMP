@@ -100,8 +100,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			
 			
-			sortingLabel1 : 'Pleasant', //Response is coded as 0. 
-			sortingLabel2 : 'Unpleasant',  //Response is coded as 1.
+			sortingLabel1 : 'Unpleasant', //Response is coded as 0. 
+			sortingLabel2 : 'Pleasant',  //Response is coded as 1.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
@@ -115,7 +115,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 
 			trialsInBlock : [60], //Number of trials in each block 
-			trialsInExample : 10, //Change to 0 if you don't want an example block
+			trialsInExample : 0, //Change to 0 if you don't want an example block
 			
 			//Duration parameters.
 			fixationDuration : -1, //It means that by default we do not use fixation.
