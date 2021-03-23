@@ -138,17 +138,21 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			
 			//Instructions text for the 2-responses version.
 			exampleBlockInst: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Now you will complete the first Visual Processing Task.<br/><br/>' + 
-			'You will see pairs of pictures flashed one after the other. The first picture shows a person, and the second shows a Chinese character. Your job is to judge the visual pleasantness of each Chinese character. <br/><br/>' + 
-			'Of course, there are no right or wrong answers. Just report your own personal feelings as to whether each Chinese character looks relatively pleasant or unpleasant.<br/><br/>' + 
+			'Press the key <B>rightKey</B> if the targetCat is more rightAttribute than average. ' + 
+			'Hit the <b>leftKey</b> key if it is more leftAttribute than average.<br/><br/>' + 
+			'The items appear and disappear quickly.  ' + 
+			'Remember to ignore the item that appears before the targetCat and evaluate only the targetCat.<br/><br/></p>'  + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' +
+			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
+			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Round 1 of nBlocks]</p></div>',
 			firstBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			"Practice is now complete and the first Visual Processing Task will now begin. " + 
-			"As a reminder, if you think a Chinese character looks more pleasant than average, press the 'E' key. If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
+			"See how fast it is? Don't worry if you miss some. " + 
+			'Go with your gut feelings.<br/><br/>' + 
 			'Concentrate on each targetCat and rate it as more rightAttribute than the average targetCat with the <b>rightKey</b> key, ' + 
+			'or more leftAttribute than average with the <b>leftKey</b> key.<br/><br/>' + 
+			'Evaluate each targetCat and not the item that appears before it. ' + 
+			'Those items are sometimes distracting.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
@@ -1052,7 +1056,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
-						{media:{html:fromTemplate({template:example1BlockInst, blockNum:1})}, nolog:true}, 
+						{media:{html:fromTemplate({template:exampleBlockInst, blockNum:1})}, nolog:true}, 
 						{inherit:'dummyForLog'}
 					]
 				}
@@ -1060,7 +1064,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//example trials
 			trialSequence.push(
 				{ 
-					mixer: 'repeat',// Repeat x times the trial.
+					mixer: 'repeat',// Repeat 3 times the trial.
 					times: piCurrent.trialsInExample,
 					data : [
 						{
