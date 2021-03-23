@@ -1069,7 +1069,16 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					stimuli: [
 						{media:{html:fromTemplate({template:egeg, blockNum:1})}, nolog:true}, 
 						{inherit:'dummyForLog'},
-						{media:{html:fromTemplate({template:exampleBlockInst, blockNum:2})}, nolog:true}, 
+					]
+				}
+			);
+			//Instructions trial
+			trialSequence.push(
+				{
+					inherit : 'inst', 
+					data: {blockStart:true, block:blockNum}, 
+					stimuli: [
+						{media:{html:fromTemplate({template:exampleBlockInst, blockNum:blockNum})}, nolog:true}, 
 						{inherit:'dummyForLog'}
 					]
 				}
