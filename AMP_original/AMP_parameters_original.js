@@ -1062,14 +1062,16 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		var blockNum = 1;
 		if (piCurrent.trialsInExample > 0)
 		{
-		    var exampleBlockInst = piCurrent.responses==2 ? piCurrent.exampleBlockInst : piCurrent.exampleBlockInst7;
+		    var example1BlockInst = piCurrent.responses==2 ? piCurrent.example1BlockInst : piCurrent.exampleBlockInst7;
+			var example2BlockInst = piCurrent.responses==2 ? piCurrent.example2BlockInst : piCurrent.exampleBlockInst7;
+			var example3BlockInst = piCurrent.responses==2 ? piCurrent.example3BlockInst : piCurrent.exampleBlockInst7;
 			//Instructions trial
 			trialSequence.push(
 				{
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst, blockNum:1})}, nolog:true}, 
+						{media:{html:fromTemplate({template:example1BlockInst, blockNum:1})}, nolog:true}, 
 						{inherit:'dummyForLog'}
 					]
 				}
@@ -1077,7 +1079,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			//example trials
 			trialSequence.push(
 				{ 
-					mixer: 'repeat',// Repeat 3 times the trial.
+					mixer: 'repeat',// Repeat x times the trial.
 					times: piCurrent.trialsInExample,
 					data : [
 						{
