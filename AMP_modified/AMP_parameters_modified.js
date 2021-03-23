@@ -100,8 +100,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 			
 			
-			sortingLabel1 : 'Pleasant', //Response is coded as 0. 
-			sortingLabel2 : 'Unpleasant',  //Response is coded as 1.
+			sortingLabel1 : 'Unpleasant', //Response is coded as 0. 
+			sortingLabel2 : 'Pleasant',  //Response is coded as 1.
 			randomizeLabelSides : false, //IF false, then label1 is on the left, and label2 is on the right.
 
 			//The default font color of text in the task (e.g., for key labels).
