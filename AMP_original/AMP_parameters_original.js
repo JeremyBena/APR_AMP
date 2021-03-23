@@ -144,7 +144,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Your job is to judge the visual pleasantness of each Chinese character.<br/><br/>' +
 			'Of course, there are no right or wrong answers. Just report your own personal feelings as to whether each Chinese character looks relatively pleasant or unpleasant.<br/><br/>' +
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'to proceed with the instructions, hit the <b>space bar</b>.</p>' + 
+			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 1/3]</p></div>',
 			exampleBlockInst2: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
@@ -152,7 +152,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'If a Chinese character looks more pleasant than average, press the E key on the left.<br/><br/>' + 
 			'If a Chinese character looks less pleasant than average, press the I key on the right.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'to proceed with the instructions, hit the <b>space bar</b>.</p>' + 
+			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 2/3]</p></div>',
 			exampleBlockInst3: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
@@ -160,7 +160,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Because we are interested in how you can avoid being biased, please try your absolute best not to let the people bias your judgment of the Chinese characters!<br/><br/>' + 
 			'Give us an honest assessment of each Chinese character, regardless of the pictures that precede them.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'to proceed with the instructions, hit the <b>space bar</b>.</p>' + 
+			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 3/3]</p></div>',
 			exampleBlockInst4: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
