@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://jeremybena.github.io/APR_AMP/AMP_modified/AMP_parameters_modified.js'], function(APIConstructor, ampExtension){
+define(['pipAPI', 'https://jeremybena.github.io/APR_AMP/AMP_modified_t2/AMP_parameters_modified_t2.js'], function(APIConstructor, ampExtension){
 
 	var API = new APIConstructor();
 	
