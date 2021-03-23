@@ -143,16 +143,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Of course, there are no right or wrong answers. Just report your own personal feelings as to whether each Chinese character looks relatively pleasant or unpleasant.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'Put your middle or index fingers on the E and I keys of your keyboard.<br/><br/>' + 
-			'If a Chinese character looks less pleasant than average, press the I key on the right. <br/><br/>' +  
-			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
-			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'It is important to note that the pictures of people can sometimes bias people’s judgments of the Chinese characters.<br/><br/>' + 
-			'Because we are interested in how you can avoid being biased, please try your absolute best not to let the people bias your judgment of the Chinese characters! Give us an honest assessment of each Chinese character, regardless of the pictures that precede them.<br/><br/>' + 
-			'When you are ready to try a few practice responses, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<p style="font-size:12px; text-align:center; font-family:arial">' +
 			'<color="ffffff">[Round 1 of nBlocks]</p></div>',
 			firstBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			"Practice is now complete and the first Visual Processing Task will now begin. " + 
