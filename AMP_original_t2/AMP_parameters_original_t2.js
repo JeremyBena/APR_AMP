@@ -138,15 +138,14 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			
 			//Instructions text for the 2-responses version.
 			exampleBlockInst1: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			'Now you will complete the first Visual Processing Task.<br/><br/>' + 
-			'You will see pairs of pictures flashed one after the other.<br/><br/>' + 
-			'The first picture shows a person, and the second shows a Chinese character.<br/><br/>' + 
-			'Your job is to judge whether each person is a pleasant individual or an unpleasant individual.<br/><br/>' +
-			'Of course, there are no right or wrong answers. Just report your intuition as to whether each person is a pleasant or unpleasant individual.<br/><br/>' +
+			'Now you will complete the second Visual Processing Task.<br/><br/>' + 
+			'As a reminder, you will see pairs of pictures flashed one after the other. The first picture shows a person, and the second shows a Chinese character.<br/><br/>' + 
+			'Your job is to judge the visual pleasantness of each Chinese character.<br/><br/>' + 
+			'Of course, there are no right or wrong answers. Just report your own personal feelings as to whether each Chinese character looks relatively pleasant or unpleasant.<br/><br/>' +
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Instructions 1/3]</p></div>',
+			'<color="ffffff">[Instructions]</p></div>',
 			exampleBlockInst2: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Put your middle or index fingers on the E and I keys of your keyboard.<br/><br/>' + 
 			'If you think someone is a more pleasant individual than average, press the E key on the left.<br/><br/>' + 
@@ -171,13 +170,12 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Practice trials]</p></div>',
 			firstBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
-			"Practice is now complete and the first Visual Processing Task will now begin.<br/><br/>" + 
-			"As a reminder, if you think someone is a more pleasant individual than average, press the 'E' key.br/><br/>" + 
-			"If you think someone is a less pleasant individual than average, press the 'I' key.<br/><br/>" + 
+			"Begin the second Visual Processing Task when you are ready.<br/><br/>" + 
+			"Again, your task is to judge whether the Chinese characters look more pleasant or less pleasant than average by pressing either the 'E' or 'I' key.<br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[First visual processing task]</p></div>',
+			'<color="ffffff">[Second visual processing task]</p></div>',
 			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Continue to start the task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
@@ -244,7 +242,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
 			endText: '<div><p style="font-size:20px; text-align:center; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
-			'You have completed the first visual processing task<br/><br/>Press "space" to resume the study.</p></div>', 
+			'You have completed the second visual processing task<br/><br/>Press "space" to resume the study.</p></div>', 
 			
 			//The feedback messages:
 			//The task will save a "feedback" variable that details the number of each type of responses after primes of each category. 
