@@ -1071,7 +1071,6 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		if (piCurrent.trialsInExample >= 0)
 		{
 		    var exampleBlockInst1 = piCurrent.responses==2 ? piCurrent.exampleBlockInst1 : piCurrent.exampleBlockInst7;
-		    var exampleBlockInst2 = piCurrent.responses==2 ? piCurrent.exampleBlockInst2 : piCurrent.exampleBlockInst7;
 			
 			//Instructions trial 1/4
 			trialSequence.push(
