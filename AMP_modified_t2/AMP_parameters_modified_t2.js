@@ -1083,18 +1083,6 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					]
 				}
 			);
-			//Instructions trial 2/4
-			trialSequence.push(
-				{
-					inherit : 'inst', 
-					data: {blockStart:true, block:blockNum}, 
-					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst2, blockNum:blockNum})}, nolog:true}, 
-						{inherit:'dummyForLog'}
-					]
-				}
-			);
-			
 			//example trials
 			trialSequence.push(
 				{ 
