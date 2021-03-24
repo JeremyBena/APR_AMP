@@ -1072,9 +1072,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		{
 		    var exampleBlockInst1 = piCurrent.responses==2 ? piCurrent.exampleBlockInst1 : piCurrent.exampleBlockInst7;
 		    var exampleBlockInst2 = piCurrent.responses==2 ? piCurrent.exampleBlockInst2 : piCurrent.exampleBlockInst7;
-		    var exampleBlockInst3 = piCurrent.responses==2 ? piCurrent.exampleBlockInst3 : piCurrent.exampleBlockInst7;
-		    var exampleBlockInst4 = piCurrent.responses==2 ? piCurrent.exampleBlockInst4 : piCurrent.exampleBlockInst7;
-
+			
 			//Instructions trial 1/4
 			trialSequence.push(
 				{
@@ -1098,29 +1096,6 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				}
 			);
 			
-			//Instructions trial 3/4
-			trialSequence.push(
-				{
-					inherit : 'inst', 
-					data: {blockStart:true, block:blockNum}, 
-					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst3, blockNum:blockNum})}, nolog:true}, 
-						{inherit:'dummyForLog'}
-					]
-				}
-			);
-			
-			//Instructions trial 4/4
-			trialSequence.push(
-				{
-					inherit : 'inst', 
-					data: {blockStart:true, block:blockNum}, 
-					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst4, blockNum:blockNum})}, nolog:true}, 
-						{inherit:'dummyForLog'}
-					]
-				}
-			);
 			//example trials
 			trialSequence.push(
 				{ 
