@@ -145,7 +145,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Instructions]</p></div>',
+			'<color="ffffff"> </p></div>',
 			exampleBlockInst2: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Put your middle or index fingers on the E and I keys of your keyboard.<br/><br/>' + 
 			'If you think someone is a more pleasant individual than average, press the E key on the left.<br/><br/>' + 
@@ -175,7 +175,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
-			'<color="ffffff">[Second visual processing task]</p></div>',
+			'<color="ffffff"> </p></div>',
 			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Continue to start the task. ' + 
 			'The rules are exactly the same:<br/><br/>' + 
@@ -242,7 +242,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'<color="000000">[Round blockNum of nBlocks]</p></div>',
 
 			endText: '<div><p style="font-size:20px; text-align:center; vertical-align:bottom; margin-left:10px; font-family:arial"><color="FFFFFF">'+
-			'You have completed the second visual processing task<br/><br/>Press "space" to resume the study.</p></div>', 
+			'You have completed the second Visual Processing Task.<br/><br/>Press "space" to resume the study.</p></div>', 
 			
 			//The feedback messages:
 			//The task will save a "feedback" variable that details the number of each type of responses after primes of each category. 
