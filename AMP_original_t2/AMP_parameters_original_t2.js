@@ -115,7 +115,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			}, 
 
 			trialsInBlock : [60], //Number of trials in each block 
-			trialsInExample : 10, //Change to 0 if you don't want an example block
+			trialsInExample : 0, //Change to 0 if you don't want an example block
 			
 			//Duration parameters.
 			fixationDuration : -1, //It means that by default we do not use fixation.
@@ -1068,7 +1068,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		***/
 		var trialSequence = [];
 		var blockNum = 1;
-		if (piCurrent.trialsInExample > 0)
+		if (piCurrent.trialsInExample >= 0)
 		{
 		    var exampleBlockInst1 = piCurrent.responses==2 ? piCurrent.exampleBlockInst1 : piCurrent.exampleBlockInst7;
 		    var exampleBlockInst2 = piCurrent.responses==2 ? piCurrent.exampleBlockInst2 : piCurrent.exampleBlockInst7;
