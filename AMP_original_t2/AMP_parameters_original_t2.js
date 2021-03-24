@@ -1071,7 +1071,6 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		if (piCurrent.trialsInExample >= 0)
 		{
 		    var exampleBlockInst1 = piCurrent.responses==2 ? piCurrent.exampleBlockInst1 : piCurrent.exampleBlockInst7;
-		    var exampleBlockInst2 = piCurrent.responses==2 ? piCurrent.exampleBlockInst2 : piCurrent.exampleBlockInst7;
 			
 			//Instructions trial 1/4
 			trialSequence.push(
@@ -1081,17 +1080,6 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					stimuli: [
 						{media:{html:fromTemplate({template:exampleBlockInst1, blockNum:1})}, nolog:true}, 
 						{inherit:'dummyForLog'},
-					]
-				}
-			);
-			//Instructions trial 2/4
-			trialSequence.push(
-				{
-					inherit : 'inst', 
-					data: {blockStart:true, block:blockNum}, 
-					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst2, blockNum:blockNum})}, nolog:true}, 
-						{inherit:'dummyForLog'}
 					]
 				}
 			);
