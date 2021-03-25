@@ -153,7 +153,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'If a Chinese character looks less pleasant than average, press the I key on the right.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 2/3]</p></div>',
 			exampleBlockInst3: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			'It is important to note that the pictures of people can sometimes bias people’s judgments of the Chinese characters.<br/><br/>' + 
@@ -176,7 +176,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff"> </p></div>',
 			middleBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Continue to start the task. ' + 
