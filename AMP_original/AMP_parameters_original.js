@@ -1079,7 +1079,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst1, blockNum:1})}, nolog:true}, 
+						{media:{html:fromTemplate({template:exampleBlockInst1, blockNum:1})}, nolog:true, css:{color:piCurrent.fontColor}}, 
 						{inherit:'dummyForLog'},
 					]
 				}
