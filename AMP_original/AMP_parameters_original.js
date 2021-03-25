@@ -137,7 +137,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			exampleBlock_targetDuration : 100, 
 			
 			//Instructions text for the 2-responses version.
-			exampleBlockInst1: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#f5f9ff"><br/>' + 
+			exampleBlockInst1: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			'Now you will complete the first Visual Processing Task.<br/><br/>' + 
 			'You will see pairs of pictures flashed one after the other.<br/><br/>' + 
 			'The first picture shows a person, and the second shows a Chinese character.<br/><br/>' + 
@@ -147,7 +147,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 1/3]</p></div>',
-			exampleBlockInst2: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#f5f9ff"><br/>' + 
+			exampleBlockInst2: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			'Put your middle or index fingers on the E and I keys of your keyboard.<br/><br/>' + 
 			'If a Chinese character looks more pleasant than average, press the E key on the left.<br/><br/>' + 
 			'If a Chinese character looks less pleasant than average, press the I key on the right.<br/><br/>' + 
@@ -155,7 +155,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 2/3]</p></div>',
-			exampleBlockInst3: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#f5f9ff"><br/>' + 
+			exampleBlockInst3: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			'It is important to note that the pictures of people can sometimes bias people’s judgments of the Chinese characters.<br/><br/>' + 
 			'Because we are interested in how you can avoid being biased, please try your absolute best not to let the people bias your judgment of the Chinese characters!<br/><br/>' + 
 			'Give us an honest assessment of each Chinese character, regardless of the pictures that precede them.<br/><br/>' + 
@@ -163,14 +163,14 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'To continue, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 3/3]</p></div>',
-			exampleBlockInst4: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#f5f9ff"><br/>' + 
+			exampleBlockInst4: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			'To get a feel for the task, we will begin with 10 practice trials.<br/><br/>' + 
 			"Again, your task is to judge whether the Chinese characters look more pleasant or less pleasant than average by pressing either the 'E' or 'I' key.<br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'When you are ready to try a few practice trials, hit the <b>space bar</b>.</p>' + 
 			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Practice trials]</p></div>',
-			firstBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#f5f9ff"><br/>' + 
+			firstBlockInst : '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			"Practice is now complete and the first Visual Processing Task will now begin.<br/><br/>" + 
 			"As a reminder, if you think a Chinese character looks more pleasant than average, press the 'E' key.<br/><br/>" + 
 			"If you think a Chinese character looks less pleasant than average, press the 'I' key.<br/><br/>" + 
