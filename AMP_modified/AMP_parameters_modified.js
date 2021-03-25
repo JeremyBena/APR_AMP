@@ -1080,7 +1080,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst1, blockNum:1})}, nolog:true}, 
+						{media:{html:fromTemplate({template:exampleBlockInst1, blockNum:1})}, nolog:true, css:{color:piCurrent.fontColor}}, 
 						{inherit:'dummyForLog'},
 					]
 				}
@@ -1091,7 +1091,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst2, blockNum:blockNum})}, nolog:true}, 
+						{media:{html:fromTemplate({template:exampleBlockInst2, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
 						{inherit:'dummyForLog'}
 					]
 				}
@@ -1103,7 +1103,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst3, blockNum:blockNum})}, nolog:true}, 
+						{media:{html:fromTemplate({template:exampleBlockInst3, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
 						{inherit:'dummyForLog'}
 					]
 				}
@@ -1115,7 +1115,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
 					stimuli: [
-						{media:{html:fromTemplate({template:exampleBlockInst4, blockNum:blockNum})}, nolog:true}, 
+						{media:{html:fromTemplate({template:exampleBlockInst4, blockNum:blockNum})}, nolog:true, css:{color:piCurrent.fontColor}}, 
 						{inherit:'dummyForLog'}
 					]
 				}
@@ -1155,7 +1155,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 				{
 					inherit : 'inst', 
 					data: {blockStart:true, block:blockNum}, 
-					stimuli: [ {media:{html:fromTemplate({template:blockInst, blockNum:iBlock+2})}, nolog:true}, {inherit:'dummyForLog'}]
+					stimuli: [ {media:{html:fromTemplate({template:blockInst, blockNum:iBlock+2})}, nolog:true, css:{color:piCurrent.fontColor}}, {inherit:'dummyForLog'}]
 				}
 			);
 			//trials
