@@ -23,9 +23,9 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			canvas : {
 				maxWidth: 850,
 				proportions : .8,
-				background: '#ffffff',
+				background: '#000000',
 				borderWidth: 4,
-				canvasBackground: '#ffffff',
+				canvasBackground: '#000000',
 				borderColor: 'lightblue'
 			}, 
 			//The CSS for all the prime stimuli.
