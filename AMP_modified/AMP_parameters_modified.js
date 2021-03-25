@@ -145,7 +145,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Of course, there are no right or wrong answers. Just report your intuition as to whether each person is a pleasant or unpleasant individual.<br/><br/>' +
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 1/3]</p></div>',
 			exampleBlockInst2: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Put your middle or index fingers on the E and I keys of your keyboard.<br/><br/>' + 
@@ -153,7 +153,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'If you think someone is a less pleasant individual than average, press the I key on the right.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 2/3]</p></div>',
 			exampleBlockInst3: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'It is important to note that the Chinese characters can sometimes bias people’s judgments of the people.<br/><br/>' + 
@@ -161,14 +161,14 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Give us an honest assessment of each person, regardless of the images that follow them.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To continue, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 3/3]</p></div>',
 			exampleBlockInst4: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'To get a feel for the task, we will begin with 10 practice trials.<br/><br/>' + 
 			"Again, your task is to judge whether the people are more pleasant individuals or less pleasant individuals than average by pressing either the 'E' or 'I' key.<br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'When you are ready to try a few practice trials, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Practice trials]</p></div>',
 			firstBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			"Practice is now complete and the first Visual Processing Task will now begin.<br/><br/>" + 
@@ -176,7 +176,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			"If you think someone is a less pleasant individual than average, press the 'I' key.<br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'Ready? Hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff"> </p></div>',
 			middleBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="ffffff"><br/>' + 
 			'Continue to start the task. ' + 
