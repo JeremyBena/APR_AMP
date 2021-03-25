@@ -137,7 +137,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			exampleBlock_targetDuration : 100, 
 			
 			//Instructions text for the 2-responses version.
-			exampleBlockInst1: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
+			exampleBlockInst1: '<div><p style="font-size:20px; text-align:left; margin-left:10px; font-family:arial"><br/>' + 
 			'Now you will complete the first Visual Processing Task.<br/><br/>' + 
 			'You will see pairs of pictures flashed one after the other.<br/><br/>' + 
 			'The first picture shows a person, and the second shows a Chinese character.<br/><br/>' + 
