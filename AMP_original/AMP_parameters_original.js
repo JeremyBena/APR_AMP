@@ -392,8 +392,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		}
 		
 		var layout2 = [
-				{location:{left:2,bottom:6},media:{word: "E = Pleasant"}, css:{color:piCurrent.fontColor,'font-size':'1.8em'}},
-				{location:{right:2,bottom:6},media:{word: "I = Unpleasant"},  css:{color:piCurrent.fontColor,'font-size':'1.8em'}}
+				{location:{left:4,bottom:6},media:{word: "E = Pleasant"}, css:{color:piCurrent.fontColor,'font-size':'1.8em'}},
+				{location:{right:4,bottom:6},media:{word: "I = Unpleasant"},  css:{color:piCurrent.fontColor,'font-size':'1.8em'}}
 			];
 		var layout = piCurrent.responses==2 ? layout2 : [];
 			
