@@ -23,7 +23,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			canvas : {
 				maxWidth: 850,
 				proportions : .8,
-				background: '#000000',
+				background: '#ffffff',
 				borderWidth: 4,
 				canvasBackground: '#ffffff',
 				borderColor: 'lightblue'
