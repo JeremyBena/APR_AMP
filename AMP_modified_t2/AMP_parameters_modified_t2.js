@@ -391,11 +391,10 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		}
 		
 		var layout2 = [
-				{location:{left:2,top:2},media:{word:'key: '+ piCurrent.leftKey.toUpperCase()}, css:{color:piCurrent.fontColor,'font-size':'1em'}},
-				{location:{right:2,top:2},media:{word:'key: ' + piCurrent.rightKey.toUpperCase()},  css:{color:piCurrent.fontColor,'font-size':'1em'}},
-				{location:{left:2,top:5},media:{word:leftSortingLabel}, css:{color:piCurrent.targetStimulusCSS.color,'font-size':'2em'}},
-				{location:{right:2,top:5},media:{word:rightSortingLabel},  css:{color:piCurrent.targetStimulusCSS.color,'font-size':'2em'}}
+				{location:{left:6,bottom:8},media:{word: "E = Pleasant"}, css:{color:piCurrent.fontColor,'font-size':'20px'}},
+				{location:{right:6,bottom:8},media:{word: "I = Unpleasant"},  css:{color:piCurrent.fontColor,'font-size':'20px'}}
 			];
+		
 		var layout = piCurrent.responses==2 ? layout2 : [];
 			
 		API.addTrialSets('basicSort', 
