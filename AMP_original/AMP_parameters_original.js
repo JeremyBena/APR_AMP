@@ -137,7 +137,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			exampleBlock_targetDuration : 100, 
 			
 			//Instructions text for the 2-responses version.
-			exampleBlockInst1: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><br/>' + 
+			exampleBlockInst1: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="white"><br/>' + 
 			'Now you will complete the first Visual Processing Task.<br/><br/>' + 
 			'You will see pairs of pictures flashed one after the other.<br/><br/>' + 
 			'The first picture shows a person, and the second shows a Chinese character.<br/><br/>' + 
@@ -392,8 +392,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		}
 		
 		var layout2 = [
-				{location:{left:4,bottom:6},media:{word: "E = Pleasant"}, css:{color:piCurrent.fontColor,'font-size':'1.8em'}},
-				{location:{right:4,bottom:6},media:{word: "I = Unpleasant"},  css:{color:piCurrent.fontColor,'font-size':'1.8em'}}
+				{location:{left:6,bottom:8},media:{word: "E = Pleasant"}, css:{color:piCurrent.fontColor,'font-size':'1.4em'}},
+				{location:{right:6,bottom:8},media:{word: "I = Unpleasant"},  css:{color:piCurrent.fontColor,'font-size':'1.4em'}}
 			];
 		var layout = piCurrent.responses==2 ? layout2 : [];
 			
