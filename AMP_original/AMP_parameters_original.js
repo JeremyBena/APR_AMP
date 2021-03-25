@@ -392,8 +392,8 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 		}
 		
 		var layout2 = [
-				{location:{left:2,bottom:2},media:{word:'key: '+ piCurrent.leftKey.toUpperCase()}, css:{color:piCurrent.fontColor,'font-size':'1em'}},
-				{location:{right:2,bottom:2},media:{word:'key: ' + piCurrent.rightKey.toUpperCase()},  css:{color:piCurrent.fontColor,'font-size':'1em'}},
+				{location:{left:2,bottom:3},media:{word: "E = Pleasant"}, css:{color:piCurrent.fontColor,'font-size':'1em'}},
+				{location:{right:2,bottom:3},media:{word: "I = Unpleasant"},  css:{color:piCurrent.fontColor,'font-size':'1em'}},
 				{location:{left:2,bottom:5},media:{word:leftSortingLabel}, css:{color:piCurrent.targetStimulusCSS.color,'font-size':'2em'}},
 				{location:{right:2,bottom:5},media:{word:rightSortingLabel},  css:{color:piCurrent.targetStimulusCSS.color,'font-size':'2em'}}
 			];
