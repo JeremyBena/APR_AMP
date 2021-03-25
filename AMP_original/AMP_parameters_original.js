@@ -145,7 +145,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Of course, there are no right or wrong answers. Just report your own personal feelings as to whether each Chinese character looks relatively pleasant or unpleasant.<br/><br/>' +
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To proceed with the instructions, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 1/3]</p></div>',
 			exampleBlockInst2: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			'Put your middle or index fingers on the E and I keys of your keyboard.<br/><br/>' + 
@@ -161,14 +161,14 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			'Give us an honest assessment of each Chinese character, regardless of the pictures that precede them.<br/><br/>' + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'To continue, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Instructions 3/3]</p></div>',
 			exampleBlockInst4: '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			'To get a feel for the task, we will begin with 10 practice trials.<br/><br/>' + 
 			"Again, your task is to judge whether the Chinese characters look more pleasant or less pleasant than average by pressing either the 'E' or 'I' key.<br/><br/>" + 
 			'<p style="font-size:16px; text-align:center; font-family:arial"><color="ffffff"><br/><br/>' + 
 			'When you are ready to try a few practice trials, hit the <b>space bar</b>.</p>' + 
-			'<p style="font-size:12px; text-align:center; font-family:arial">' + 
+			'<p style="font-size:16px; text-align:center; font-family:arial">' + 
 			'<color="ffffff">[Practice trials]</p></div>',
 			firstBlockInst : '<div><p style="font-size:20px; text-align:center; margin-left:10px; font-family:arial"><color="#ffffff"><br/>' + 
 			"Practice is now complete and the first Visual Processing Task will now begin.<br/><br/>" + 
