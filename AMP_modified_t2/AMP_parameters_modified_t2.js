@@ -1,8 +1,5 @@
 define(['pipAPI','underscore'], function(APIConstructor, _) {
-	/**
-	You can modify most of what you need to modify in the settings 
-	defined in epObj below. Or use an external script to call the epExtension function.
-	**/
+//Adapted from Bengayev, E. (2020, July 27). Running Project Implicit’s AMP from Qualtrics [Blog post]. Retrieved from https://minnojs.github.io/minnojs-blog/qualtrics-amp/  
 
 	/**
 	Created by: Yoav Bar-Anan (baranan@gmail.com), modified by Jérémy Béna for the present experiment.  
