@@ -1,4 +1,5 @@
 define(['pipAPI', 'https://jeremybena.github.io/APR_AMP/AMP_modified/AMP_parameters_modified.js'], function(APIConstructor, ampExtension){
+//Adapted from Bengayev, E. (2020, July 27). Running Project Implicit’s AMP from Qualtrics [Blog post]. Retrieved from https://minnojs.github.io/minnojs-blog/qualtrics-amp/  
 
 	var API = new APIConstructor();
 	
