@@ -1177,7 +1177,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 			inherit : "inst",
 			stimuli: [
 				{//The instructions stimulus
-					media:{html:piCurrent.endText,data:{block:blockNum, condition:'end', css:{color:piCurrent.fontColor}}}, nolog:true
+					media:{html:piCurrent.endText,data:{block:blockNum, condition:'end'}}, nolog:true, color:piCurrent.fontColor
 				}, 
 				{//For the logging
 					inherit:'dummyForLog'
