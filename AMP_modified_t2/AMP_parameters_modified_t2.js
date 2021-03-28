@@ -5,7 +5,7 @@ define(['pipAPI','underscore'], function(APIConstructor, _) {
 	**/
 
 	/**
-	Created by: Yoav Bar-Anan (baranan@gmail.com). 
+	Created by: Yoav Bar-Anan (baranan@gmail.com), modified by Jérémy Béna for the present experiment.  
 	 * @param  {Object} options Options that replace the defaults...
 	 * @return {Object}         PIP script
 	**/
